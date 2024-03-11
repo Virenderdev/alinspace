@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+ 
+}
+.overflow-hidden {
+  overflow-x: hidden !important; /* Ensure it overrides any other styles */
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700; /* Use the desired font weight */
+}
+
+/* For italic */
+.emphasized {
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+}
+
+
+.aim{
+display: grid;
+grid-template-columns: 1fr auto;
+gap: 150px;
+align-items: center;
+}
+
+.p-card{
+  margin: 0.1rem;
+  /* background-image: url("./images/image1.jpg");
+  background-size: cover;
+  background-position: center; */
+  width: calc(30% - 20px);
+}
+
+.service-section{
+  background-image: url("./images/image5.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px; /* Adjust padding as needed */
+  color: #221f1f;
+  background-color: #221f1f;
+}
+
+/* style={{ display: 'flex', justifyContent: "center", flexWrap: "wrap", width: "100%" }}> */
+    .service-card {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .buttons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      /* margin-bottom: 30px; */
+    }
+   .home-heading{
+      font-weight: bolder;
+      line-height: 55px;
+      font-size: xxx-large;
+    }
+
+    @media screen and (max-width: 767px) {
+      /* Adjust card layout for mobile and tablet views */
+      .service-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Align cards to center vertically */
+        width: 100%;
+        margin: 10px 0; /* Add some margin between cards */
+      }
+    
+      .aim {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        align-items: center;
+      }
+    
+      .p-card {
+        width: 100%; /* Remove the width property for mobile and tablet views */
+        margin: 10px; /* Adjust the margin as needed */
+        display: flex;
+        flex-direction: column;
+      }
+      .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+      }
+    }
+    

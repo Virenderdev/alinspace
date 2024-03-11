@@ -1,0 +1,42 @@
+.tab-view .p-tabview-nav {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.tab-view .p-tabview-nav .p-tabview-nav-link {
+    color: #000;
+}
+
+.tab-view .p-tabview-nav .p-tabview-nav-link-active {
+    color: #000;
+    font-weight: bold;
+}
+
+.tab-view .p-tabview-panels {
+    border: none;
+    padding: 0;
+}
+.p-tabview .p-tabview-nav .p-tabview-ink-bar {
+    display: none;
+}
+.p-tabview .p-tabview-nav {
+    border: none;
+}
+span .p-tabview-title{
+    color: #000;
+}
+ul a {
+    color: #000;
+    border: 1px solid #000;
+    margin: 0.4rem;
+    border-radius: 8px;
+}
+ .p-tabview-nav{
+    margin-bottom: 2rem;
+}
+.tab-view .p-tabview-panels .p-tabview-panel {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
