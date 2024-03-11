@@ -12,6 +12,7 @@ import Header from './components/Header/Header';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
         
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
       </Routes>
   
     </div>

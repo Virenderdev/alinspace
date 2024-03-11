@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import './Navbar.css';
 import { NavItems } from '../constants/constant';
-
+import logo from "../../images/logo.png"
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <img src="path_to_your_logo.png" alt="Logo" /> 
+        <img src={logo} alt="Logo" style={{width:"45px",height:"45px"}} /> 
       </div>
       <div className={`navbar-links ${showMenu ? "active" : ""}`}>
         <div className="hamburger-menu" onClick={toggleMenu}>

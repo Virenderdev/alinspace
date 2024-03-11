@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { FaInstagram, FaFacebook, FaGooglePlusSquare } from 'react-icons/fa';
+import logo from "../../images/logo.png"
 const Footer = () => {
   return (
     <div className="footer">
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="inner-footer">
         
         <div className="footer-items">
-         <img src ="" alt='footer-logo' className='footer-logo'/>
+         <img src ={logo} alt='footer-logo' className='footer-logo'/>
           {/* <p>Description of any product or motto of the company.</p> */}
         </div>
         <div className="footer-items">

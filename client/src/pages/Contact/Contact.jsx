@@ -17,11 +17,31 @@ function Contact() {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission (e.g., send data to backend)
-        console.log(formData);
-    };
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      try {
+          const response = await fetch('http://localhost:5000/submit-form', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(formData),
+          });
+          if (response.ok) {
+              // Form submission was successful
+              // Optionally, reset the form
+              setFormData({ subject: '', name: '', email: '', phone: '', budget: '', description: '' });
+              console.log('Form submitted successfully');
+          } else {
+              // Form submission failed
+              console.error('Form submission failed:', response.statusText);
+          }
+      } catch (error) {
+          // An error occurred while submitting the form
+          console.error('Form submission failed:', error);
+      }
+  };
+  
 
     return (
       <>
